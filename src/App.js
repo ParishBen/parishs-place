@@ -1,13 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
-import ConfettiExplosion from '@reonomy/react-confetti-explosion';
+//import ConfettiExplosion from '@reonomy/react-confetti-explosion';
 import * as React from 'react';
+//import ReactCanvasConfetti from 'react-canvas-confetti';
+import Realistic from './RealisticConfetti';
 
 const bigExplodeProps = {
   force: 0.6,
   duration: 3000,
   particleCount: 200,
-  floorHeight: 2000,
+  floorHeight: 1500,
   floorWidth: 1800
 }
 
@@ -30,22 +32,9 @@ const button = {
 }
 
 function App() {
-  const [isExploding, setIsExploding] = React.useState(true);
   return (
     <div className="App">
-<div
-    //type="button"
-    onLoad={() => setIsExploding(!isExploding)}
-    //style={button}
- >
-   {isExploding && (
-      <div style={{position:'absolute',top:'50%',
-      left:'50%'}}>
-        <ConfettiExplosion {...bigExplodeProps} />
-      </div>
-    )}
-    
-  </div> 
+      <Realistic/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <img src= "https://live.staticflickr.com/65535/51823489824_ca33c82976.jpg" width="500" height="480" alt="Miss Rory Santa Clause" title="Miss Rory Santa Clause"/>
@@ -57,7 +46,7 @@ function App() {
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
-        >
+          >
           Learn React 
         </a>
 
@@ -69,3 +58,18 @@ function App() {
 
 
 export default App;
+
+//const [isExploding, setIsExploding] = React.useState(true);
+/* <div
+//type="button"
+onLoad={() => setIsExploding(!isExploding)}
+//style={button}
+>
+{isExploding && (
+      <div style={{position:'absolute',top:'10%',
+      left:'50%'}}>
+        <ConfettiExplosion {...bigExplodeProps} />
+      </div>
+    )}
+    
+  </div>  */
