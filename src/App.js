@@ -4,6 +4,8 @@ import './App.css';
 import * as React from 'react';
 //import ReactCanvasConfetti from 'react-canvas-confetti';
 import Realistic from './RealisticConfetti';
+import { BrowserRouter as Router, Route} from 'react-router-dom';
+import NavBar from './Navbar';
 
 const bigExplodeProps = {
   force: 0.6,
@@ -33,7 +35,9 @@ const button = {
 
 function App() {
   return (
+    <Router>
     <div className="App">
+      <NavBar/>
       <Realistic/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -52,6 +56,7 @@ function App() {
 
       </header>
     </div>
+</Router>
   );
 }
 
@@ -71,5 +76,4 @@ onLoad={() => setIsExploding(!isExploding)}
         <ConfettiExplosion {...bigExplodeProps} />
       </div>
     )}
-    
   </div>  */

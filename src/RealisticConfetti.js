@@ -15,11 +15,13 @@ export default class Realistic extends React.Component {
     super(props);
     this.animationInstance = null;
   }
+
 componentDidMount(){
     this.handlerFire()
 }
 
   makeShot = (particleRatio, opts) => {
+     // console.log(this.animationInstance)
     this.animationInstance && this.animationInstance({
       ...opts,
       origin: { y: 0.7 },
@@ -28,6 +30,7 @@ componentDidMount(){
   }
 
   fire = () => {
+     // console.log(this.animationInstance)
     this.makeShot(0.25, {
       spread: 26,
       startVelocity: 55,
