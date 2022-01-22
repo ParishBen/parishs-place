@@ -1,47 +1,53 @@
 import logo from './logo.svg';
 import './App.css';
-//import ConfettiExplosion from '@reonomy/react-confetti-explosion';
-import * as React from 'react';
+import React, { Component } from 'react';
 //import ReactCanvasConfetti from 'react-canvas-confetti';
-import Realistic from './RealisticConfetti';
-import { BrowserRouter as Router, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import NavBar from './Navbar';
+import ParishPics from './ParishPics';
+import Projects from './Projects';
 
-const bigExplodeProps = {
-  force: 0.6,
-  duration: 3000,
-  particleCount: 200,
-  floorHeight: 1500,
-  floorWidth: 1800
-}
+// const bigExplodeProps = {
+//   force: 0.6,
+//   duration: 3000,
+//   particleCount: 200,
+//   floorHeight: 1500,
+//   floorWidth: 1800
+// }
 
-const button = {
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translateY(-50%) translateX(-50%)',
-  padding: '20px 40px',
-  color: 'white',
-  backgroundColor: '#36634d',
-  fontFamily: 'sans-serif',
-  textTransform: 'uppercase',
-  letterSpacing: 1,
-  fontWeight: 'bold',
-  border: '2px solid white',
-  borderRadius: 4,
-  boxShadow: '0 0 20px black',
-  cursor: 'pointer',
-}
+// const button = {
+//   position: 'absolute',
+//   top: '50%',
+//   left: '50%',
+//   transform: 'translateY(-50%) translateX(-50%)',
+//   padding: '20px 40px',
+//   color: 'white',
+//   backgroundColor: '#36634d',
+//   fontFamily: 'sans-serif',
+//   textTransform: 'uppercase',
+//   letterSpacing: 1,
+//   fontWeight: 'bold',
+//   border: '2px solid white',
+//   borderRadius: 4,
+//   boxShadow: '0 0 20px black',
+//   cursor: 'pointer',
+// }
 
-function App() {
+class App extends Component {
+  render(){
   return (
     <Router>
     <div className="App">
-      <NavBar/>
-      <Realistic/>
+      
+    <NavBar/>
+      <Routes>
+       <Route path='/parish-pics' element={<ParishPics /> }/>
+       <Route path='/projects' element={<Projects /> } />
+     </Routes>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <img src= "https://live.staticflickr.com/65535/51823489824_ca33c82976.jpg" width="500" height="480" alt="Miss Rory Santa Clause" title="Miss Rory Santa Clause"/>
+        {/* <Route path='/favorites' render={ routerProps => <FavoritesContainer {...routerProps} artists={this.state.artistsObjArr} token= {this.tokenProp()}/>}/> */}
+
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -56,8 +62,9 @@ function App() {
 
       </header>
     </div>
-</Router>
+     </Router>
   );
+  }
 }
 
 
