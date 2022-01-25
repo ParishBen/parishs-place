@@ -44,6 +44,7 @@ class App extends Component {
        <Route path='/parish-pics' element={<ParishPics /> }/>
        <Route path='/projects' element={<Projects /> } />
      </Routes>
+     <p> Hey there and welcome! <br/> Just a heads up this is a WIP on the early stages BUT I'm very excited to get a personal site going and hope to polish this off much sooner than later!</p>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         {/* <Route path='/favorites' render={ routerProps => <FavoritesContainer {...routerProps} artists={this.state.artistsObjArr} token= {this.tokenProp()}/>}/> */}
