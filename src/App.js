@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import NavBar from './Navbar';
 import ParishPics from './ParishPics';
 import Projects from './Projects';
+import WIP from './WIP'
 
 // const bigExplodeProps = {
 //   force: 0.6,
@@ -33,7 +34,17 @@ import Projects from './Projects';
 //   cursor: 'pointer',
 // }
 
+  
+// }
+
+
 class App extends Component {
+
+  // renderer=()=>{
+  // if(window.location.href == 'http://localhost:3000/' || window.location.href == 'https://blog-of-ben.netlify.app/'){
+  //   return <WIP/>
+  // }} 
+
   render(){
   return (
     <Router>
@@ -44,10 +55,8 @@ class App extends Component {
        <Route path='/parish-pics' element={<ParishPics /> }/>
        <Route path='/projects' element={<Projects /> } />
      </Routes>
-     <p> Hey there and welcome! <br/> Just a heads up this is a WIP on the early stages BUT I'm very excited to get a personal site going and hope to polish this off much sooner than later!</p>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        {/* <Route path='/favorites' render={ routerProps => <FavoritesContainer {...routerProps} artists={this.state.artistsObjArr} token= {this.tokenProp()}/>}/> */}
 
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -62,6 +71,7 @@ class App extends Component {
         </a>
 
       </header>
+    { window.location.href == 'http://localhost:3000/' || window.location.href== 'https://blog-of-ben.netlify.app/' ? <WIP/> : ''}
     </div>
      </Router>
   );
