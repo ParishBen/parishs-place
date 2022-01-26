@@ -1,5 +1,6 @@
 import React from "react";
 import Realistic from "./RealisticConfetti";
+import WIP from "./WIP";
 
 
 const ParishPics = () => {
@@ -12,7 +13,6 @@ const ParishPics = () => {
                     <td><img src= "https://live.staticflickr.com/65535/51823489824_ca33c82976.jpg" width="500" height="480" alt="Rory Clause" title="Miss Rory Santa Clause" /></td><td><img src= "https://live.staticflickr.com/65535/51823489824_ca33c82976.jpg" width="500" height="480" alt="Rory Clause" title="Miss Rory Santa Clause" /></td><td><img src= "https://live.staticflickr.com/65535/51823489824_ca33c82976.jpg" width="500" height="480" alt="Rory Clause" title="Miss Rory Santa Clause" /></td> 
                 </tr>
                 </table>
-
 
         </div>
     )

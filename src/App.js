@@ -56,22 +56,16 @@ class App extends Component {
        <Route path='/projects' element={<Projects /> } />
      </Routes>
       <header className="App-header">
+        <p>
+          Hey there! Just a heads up this is still a great work in progress. I'm having fun making progress every chance I get.
+            <br/> Keep checking back for new content!
+        </p>
         <img src={logo} className="App-logo" alt="logo" />
 
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-          >
-          Learn React 
-        </a>
+    
 
       </header>
-    { window.location.href == 'http://localhost:3000/' || window.location.href== 'https://blog-of-ben.netlify.app/' ? <WIP/> : ''}
+      
     </div>
      </Router>
   );
