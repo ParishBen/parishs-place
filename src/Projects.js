@@ -34,9 +34,10 @@ const Projects = () => {
     return (
         <div style={{backgroundColor:'darkgoldenrod', position:'relative',top:'20pt'}}>
             
-        <h3>Body of Work</h3>
+        <h3>Revovling Evolving Work</h3>
         <p> Current Project(s)
-            Green Globe Trotter: Plan your next vacation's flights with the lightest carbon footprint option! 
+            Green Globe Trotter: Plan your next vacation's flights with the lightest carbon footprint option! <br/>
+            ...Oh and this website!
         </p>
         <t/> <h5>WIP...More links, interests, awesome projects, and progress to be listed soon!</h5>
         <ul style={{listStyle:'none'}}>
