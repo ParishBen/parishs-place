@@ -1,6 +1,5 @@
 import React from "react";
 import Realistic from "./RealisticConfetti";
-import WIP from "./WIP";
 
 
 const ParishPics = () => {

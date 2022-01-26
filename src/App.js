@@ -6,7 +6,6 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import NavBar from './Navbar';
 import ParishPics from './ParishPics';
 import Projects from './Projects';
-import WIP from './WIP'
 
 // const bigExplodeProps = {
 //   force: 0.6,

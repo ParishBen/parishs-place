@@ -1,5 +1,4 @@
 import React from 'react';
-import WIP from './WIP'
 import { useState } from 'react'
 
 function useHover() {
