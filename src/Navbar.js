@@ -34,15 +34,22 @@ const NavBar = () => {
       {/* <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li> */}
-          <NavLink class="nav-item"
+        {/* <NavLink class="nav-item"
         style={{ marginRight: '10px', transform:'translateY(-50%) translateX(-50%)' }} 
         activeStyle={{background: 'darkblue', color: 'white'}}
         to='/'
         exact
       > 
          Home
-      </NavLink> 
-
+      </NavLink>  */}
+      <NavLink class = "nav-item"
+        
+        style={{ marginRight: '10px' }} 
+        to="/"
+        exact
+      > 
+         Home
+      </NavLink>
         {/* <li class="nav-item">
           <a class="nav-link" href="/parish-pics">Parish Pics</a>
         </li> */}
@@ -68,14 +75,14 @@ const NavBar = () => {
         Projects 
       </NavLink> 
 
-      <NavLink class="nav-item"
+      {/* <NavLink class="nav-item"
         style={{ marginRight: '10px' }} 
         activeStyle={{background: 'darkblue', color: 'white'}}
         to="/blogs"
         exact
         >
         Blogs 
-      </NavLink> 
+      </NavLink>  */}
        <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="/blogs" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Blogs
