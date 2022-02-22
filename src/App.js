@@ -51,9 +51,9 @@ class App extends Component {
       
     <NavBar/>
       <Routes>
-       <Route path='/parish-pics' element={<ParishPics /> }/>
-       <Route path='/projects' element={<Projects /> } />
-       <Route path='/blogs' element={<Blogs />} />
+       <Route path='/blog-of-ben.netlify.app/parish-pics' element={<ParishPics /> }/>
+       <Route path='/blog-of-ben.netlify.app/projects' element={<Projects /> } />
+       <Route path='/blog-of-ben.netlify.app/blogs' element={<Blogs />} />
      </Routes>
       <header className="App-header">
         <p>
