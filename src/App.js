@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import NavBar from './Navbar';
 import ParishPics from './ParishPics';
 import Projects from './Projects';
-
+import Blogs from './Blogs';
 // const bigExplodeProps = {
 //   force: 0.6,
 //   duration: 3000,
@@ -53,6 +53,7 @@ class App extends Component {
       <Routes>
        <Route path='/parish-pics' element={<ParishPics /> }/>
        <Route path='/projects' element={<Projects /> } />
+       <Route path='/blogs' element={<Blogs />} />
      </Routes>
       <header className="App-header">
         <p>
