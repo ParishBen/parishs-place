@@ -32,7 +32,7 @@ const Projects = () => {
     //const [buttonBIsHovering, buttonBHoverProps] = useHover()
 
     return (
-        <div style={{backgroundColor:'darkgoldenrod', position:'relative',top:'20pt'}}>
+        <div style={{backgroundColor:'darkgoldenrod', position:'relative',top:'12pt'}}>
             
         <h3>Revolving Evolving Work</h3>
         <p> Current Project(s)
