@@ -34,7 +34,7 @@ const Projects = () => {
     return (
         <div style={{backgroundColor:'darkgoldenrod', position:'relative',top:'20pt'}}>
             
-        <h3>Revovling Evolving Work</h3>
+        <h3>Revolving Evolving Work</h3>
         <p> Current Project(s)
             Green Globe Trotter: Plan your next vacation's flights with the lightest carbon footprint option! <br/>
             ...Oh and this website!
