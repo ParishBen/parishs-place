@@ -84,9 +84,17 @@ const NavBar = () => {
         Blogs 
       </NavLink>  */}
        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="/blogs" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          {/* <a class="nav-link dropdown-toggle" href="/blogs" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Blogs
-          </a>
+          </a> */}
+          <NavLink class="nav-link dropdown-toggle" href="/blogs" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+        style={{ marginRight: '10px' }} 
+        activeStyle={{background: 'darkblue', color: 'white'}}
+        to="/blogs"
+        exact
+        >
+        Blogs 
+      </NavLink> 
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li><a class="dropdown-item" href="/blogs">Blog1</a></li>
             <li><a class="dropdown-item" href="/blogs">Another Blog</a></li>
