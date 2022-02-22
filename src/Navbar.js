@@ -1,5 +1,5 @@
 import React from 'react';
-// import { NavLink } from 'react-router-dom';
+ import { NavLink } from 'react-router-dom';
 
 // transform: 'translateY(-50%) translateX(-50%)',
 //   padding: '20px 40px',
@@ -31,39 +31,51 @@ const NavBar = () => {
     </button>
     <div class="collapse navbar-collapse show" id="navbarNavAltMarkup">
     <ul class="navbar-nav">
-      <li class="nav-item">
+      {/* <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/">Home</a>
-        </li>
-          {/* <NavLink 
+        </li> */}
+          <NavLink class="nav-item"
         style={{ marginRight: '10px', transform:'translateY(-50%) translateX(-50%)' }} 
         activeStyle={{background: 'darkblue', color: 'white'}}
         to='/'
         exact
-      > */}
-        {/* Home
-      </NavLink> */}
-        <li class="nav-item">
+      > 
+         Home
+      </NavLink> 
+
+        {/* <li class="nav-item">
           <a class="nav-link" href="/parish-pics">Parish Pics</a>
-        </li>
-      {/* <NavLink 
+        </li> */}
+      
+      <NavLink class = "nav-item"
         
         style={{ marginRight: '10px' }} 
         to="/parish-pics"
         exact
-      > */}
-        {/* Parish Pics
-      </NavLink> */}
-      <li class="nav-item">
+      > 
+         Parish Pics
+      </NavLink>
+
+      {/* <li class="nav-item">
           <a class="nav-link" href="/projects">Projects</a>
-        </li>
-      {/* <NavLink
+        </li> */}
+       <NavLink class="nav-item"
         style={{ marginRight: '10px' }} 
         activeStyle={{background: 'darkblue', color: 'white'}}
         to="/projects"
         exact
         >
-        Projects
-      </NavLink> */}
+        Projects 
+      </NavLink> 
+
+      <NavLink class="nav-item"
+        style={{ marginRight: '10px' }} 
+        activeStyle={{background: 'darkblue', color: 'white'}}
+        to="/blogs"
+        exact
+        >
+        Blogs 
+      </NavLink> 
        <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="/blogs" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Blogs
