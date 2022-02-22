@@ -4,7 +4,7 @@ import Realistic from "./RealisticConfetti";
 
 const ParishPics = () => {
     return(
-        <div style={{position:'relative', top:'20pt', textAlign:'center', backgroundColor:'darkgoldenrod'}}>
+        <div style={{position:'relative', top:'12pt', textAlign:'center', backgroundColor:'darkgoldenrod'}}>
             <Realistic/>
             <p style={{fontWeight:'bolder',color:'white'}}><em> Although '20-'21 has been really trying on so many - it brought us this precious bundle of joy!!</em></p>
              <table > 
