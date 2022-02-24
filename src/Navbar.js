@@ -1,9 +1,9 @@
 import React from 'react';
  import { Link } from 'react-router-dom';
-
+import './index.css'
 
 const NavBar = () => {
-  
+
   return (
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style={{height:'25pt'}}>
      <div class="container-fluid" style={{backgroundColor:'floralwhite', boxShadow: '0 0 20px black', cursor: 'pointer',textTransform:'uppercase',textAlign:'center', paddingBottom: '10px', paddingLeft:'3pt' }}>

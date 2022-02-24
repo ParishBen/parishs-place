@@ -6,7 +6,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+@media all {
+  .navbar .nav-item .dropdown-menu{ display: none; }
+  /*.navbar .nav-item:hover .nav-link{   }*/
+  .navbar .dropdown:hover .dropdown-menu{ display: block; }
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
