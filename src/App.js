@@ -7,6 +7,9 @@ import NavBar from './Navbar';
 import ParishPics from './ParishPics';
 import Projects from './Projects';
 import Blogs from './Blogs';
+import Blog1 from './Blog1';
+import Blog2 from './Blog2';
+import Blog3 from './Blog3';
 // const bigExplodeProps = {
 //   force: 0.6,
 //   duration: 3000,
@@ -54,6 +57,13 @@ class App extends Component {
        <Route path='/parish-pics' element={<ParishPics /> }/>
        <Route path='/projects' element={<Projects /> } />
        <Route path='/blogs' element={<Blogs />} />
+        <Route path='/blogs/1' element={<Blog1/>}/>
+        <Route path='/blogs/2' element={<Blog2 />}/>
+        <Route path='/blogs/3' element={<Blog3 />}/>
+
+       {/* <Route path='/blogs' element={<Blogs />} />
+       <Route path='/blogs' element={<Blogs />} /> */}
+
      </Routes>
       <header className="App-header">
         <p>

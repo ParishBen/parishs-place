@@ -1,14 +1,18 @@
+import Blog1 from "./Blog1"
+import Blog2 from "./Blog2"
+import Blog3 from "./Blog3"
 
 const Blogs = () => {
     return (
-        <div  style={{backgroundColor:'#ad9c3a', position:'relative',top:'12pt'}}>
-            <h2> Will Show all blogs in list (linked to individual Components)</h2>
+        <><span style={{backgroundColor:'#ad9c3a', position:'relative',top:'12pt'}}>
             <ul style={{listStyle:'none'}}>
-                <li>Blog1</li>
-                <li>Blog2</li>
+                <li><Blog1/></li>
+                <li><Blog2/></li>
+                <li><Blog3/></li>
             </ul>
-        </div>
+        </span></>
 
     )
 }
 export default Blogs
+
