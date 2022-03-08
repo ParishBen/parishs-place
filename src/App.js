@@ -7,10 +7,11 @@ import NavBar from './Navbar';
 import ParishPics from './ParishPics';
 import Projects from './Projects';
 import Blogs from './Blogs';
-import Blog1 from './Blog1';
 import Blog2 from './Blog2';
 import Blog3 from './Blog3';
-import Blog from './Blog';
+//import Blog4 from './Blog4';
+import Blog1 from './Blog1';
+import Blog0 from './Blog0';
 import Home from './Home';
 
 // const bigExplodeProps = {
@@ -69,9 +70,9 @@ class App extends Component {
         <Route path='/parish-pics' element={<ParishPics /> }/>
         <Route path='/projects' element={<Projects /> } />
         <Route path='/blogs' element={<Blogs />} />
-        <Route path='/blogs/:blogId' element={<Blog1/>}/>
-        <Route path='/blogs/2' element={<Blog2 />}/>
-        <Route path='/blogs/3' element={<Blog3 />}/>
+        <Route path='/blogs/1' element={<Blog0/>}/>
+        <Route path='/blogs/2' element={<Blog1 />}/>
+        <Route path='/blogs/3' element={<Blog2 />}/>
        {/* <Route path='/blogs' element={<Blogs />} />
        <Route path='/blogs' element={<Blogs />} /> */}
 

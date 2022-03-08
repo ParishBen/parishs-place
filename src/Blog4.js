@@ -1,5 +1,5 @@
 
-const Blog3 = () => {
+const Blog4 = () => {
     return (
         // <div  /*style={{backgroundColor:'#ad9c3a', position:'relative',top:'12pt'}}*/>
          <div class="container-fluid" style={{backgroundColor:'gold', boxShadow: '0 0 20px black',textAlign:'center', paddingBottom: '10px', paddingLeft:'3pt' }}>
@@ -12,7 +12,7 @@ The project was such a process to get all the moving parts and models operating 
     )
 }
 
-export default Blog3
+export default Blog4
 
 
 

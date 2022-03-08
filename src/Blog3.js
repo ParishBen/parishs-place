@@ -1,5 +1,5 @@
 
-const Blog2 = () => {
+const Blog3 = () => {
     return (
         // <div  /*style={{backgroundColor:'#ad9c3a', position:'relative',top:'12pt'}}*/>
                     <div class="container-fluid" style={{backgroundColor:'gold', boxShadow: '0 0 20px black',textAlign:'center', paddingBottom: '10px', paddingLeft:'3pt' }}>
@@ -11,4 +11,4 @@ const Blog2 = () => {
 
     )
 }
-export default Blog2
+export default Blog3
