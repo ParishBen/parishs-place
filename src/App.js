@@ -10,6 +10,9 @@ import Blogs from './Blogs';
 import Blog1 from './Blog1';
 import Blog2 from './Blog2';
 import Blog3 from './Blog3';
+import Blog from './Blog';
+import Home from './Home';
+
 // const bigExplodeProps = {
 //   force: 0.6,
 //   duration: 3000,
@@ -48,24 +51,32 @@ class App extends Component {
   // }} 
 
   render(){
+    // <Routes>
+    //     <Route path="/" element={<Layout />}>
+    //       <Route index element={<Home />} />
+    //       <Route path="blogs" element={<Blogs />} />
+    //       <Route path="contact" element={<Contact />} />
+    //       <Route path="*" element={<NoPage />} />
+    //     </Route>
+    //   </Routes>
   return (
     <Router>
     <div className="App">
       
-    <NavBar/>
+     <NavBar/> 
       <Routes>
-       <Route path='/parish-pics' element={<ParishPics /> }/>
-       <Route path='/projects' element={<Projects /> } />
-       <Route path='/blogs' element={<Blogs />} />
-        <Route path='/blogs/1' element={<Blog1/>}/>
+        <Route path="/" element={<Home />}/>
+        <Route path='/parish-pics' element={<ParishPics /> }/>
+        <Route path='/projects' element={<Projects /> } />
+        <Route path='/blogs' element={<Blogs />} />
+        <Route path='/blogs/:blogId' element={<Blog1/>}/>
         <Route path='/blogs/2' element={<Blog2 />}/>
         <Route path='/blogs/3' element={<Blog3 />}/>
-
        {/* <Route path='/blogs' element={<Blogs />} />
        <Route path='/blogs' element={<Blogs />} /> */}
 
-     </Routes>
-      <header className="App-header">
+      </Routes>
+      {/* <header className="App-header">
         <p>
           Hey there! Just a heads up this is still a great work in progress. I'm having fun making progress every chance I get.
             <br/> Keep checking back for new content!
@@ -74,7 +85,7 @@ class App extends Component {
 
     
 
-      </header>
+      </header> */}
       
     </div>
      </Router>
@@ -82,12 +93,11 @@ class App extends Component {
   }
 }
 
-
-
 export default App;
 
-//const [isExploding, setIsExploding] = React.useState(true);
-/* <div
+
+/*//const [isExploding, setIsExploding] = React.useState(true);
+ <div
 //type="button"
 onLoad={() => setIsExploding(!isExploding)}
 //style={button}
@@ -98,4 +108,5 @@ onLoad={() => setIsExploding(!isExploding)}
         <ConfettiExplosion {...bigExplodeProps} />
       </div>
     )}
-  </div>  */
+</div>  */
+
