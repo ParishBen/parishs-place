@@ -8,8 +8,6 @@ import ParishPics from './ParishPics';
 import Projects from './Projects';
 import Blogs from './Blogs';
 import Blog2 from './Blog2';
-import Blog3 from './Blog3';
-//import Blog4 from './Blog4';
 import Blog1 from './Blog1';
 import Blog0 from './Blog0';
 import Home from './Home';
@@ -73,20 +71,7 @@ class App extends Component {
         <Route path='/blogs/1' element={<Blog0/>}/>
         <Route path='/blogs/2' element={<Blog1 />}/>
         <Route path='/blogs/3' element={<Blog2 />}/>
-       {/* <Route path='/blogs' element={<Blogs />} />
-       <Route path='/blogs' element={<Blogs />} /> */}
-
       </Routes>
-      {/* <header className="App-header">
-        <p>
-          Hey there! Just a heads up this is still a great work in progress. I'm having fun making progress every chance I get.
-            <br/> Keep checking back for new content!
-        </p>
-        <img src={logo} className="App-logo" alt="logo" />
-
-    
-
-      </header> */}
       
     </div>
      </Router>
