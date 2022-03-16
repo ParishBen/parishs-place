@@ -6,12 +6,14 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import NavBar from './Navbar';
 import ParishPics from './ParishPics';
 import Projects from './Projects';
-import Blogs from './Blogs';
-import Blog2 from './Blog2';
-import Blog1 from './Blog1';
-import Blog0 from './Blog0';
+import Blogs from './Blogs.js';
+import Blog2 from './BlogsContainer/Blog2';
+import Blog1 from './BlogsContainer/Blog1';
+import Blog0 from './BlogsContainer/Blog0';
 import Home from './Home';
-
+import Blog3 from './BlogsContainer/Blog3';
+import Blog4 from './BlogsContainer/Blog4';
+import Blog5 from './BlogsContainer/Blog5';
 // const bigExplodeProps = {
 //   force: 0.6,
 //   duration: 3000,
@@ -71,6 +73,10 @@ class App extends Component {
         <Route path='/blogs/1' element={<Blog0/>}/>
         <Route path='/blogs/2' element={<Blog1 />}/>
         <Route path='/blogs/3' element={<Blog2 />}/>
+        <Route path='/blogs/4' element={<Blog3 />}/>
+        <Route path='/blogs/5' element={<Blog4 />}/>
+        <Route path='/blogs/6' element={<Blog5 />}/>
+
       </Routes>
       
     </div>

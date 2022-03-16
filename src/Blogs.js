@@ -1,10 +1,10 @@
-import Blog0 from "./Blog0"
-import Blog1 from "./Blog1"
-import Blog2 from "./Blog2"
-import Blog3 from "./Blog3"
-import Blog4 from "./Blog4"
-import Blog5 from "./Blog5"
-import Blog6 from "./Blog6"
+import Blog0 from "./BlogsContainer/Blog0"
+import Blog1 from "./BlogsContainer/Blog1"
+import Blog2 from "./BlogsContainer/Blog2"
+import Blog3 from "./BlogsContainer/Blog3"
+import Blog4 from "./BlogsContainer/Blog4"
+import Blog5 from "./BlogsContainer/Blog5"
+import Blog6 from "./BlogsContainer/Blog6"
 
 const Blogs = () => {
     return (
