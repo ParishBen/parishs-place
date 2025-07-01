@@ -1,6 +1,14 @@
 const Blog0 = () => {
   return (
-    <div>
+    <div
+    class="container-fluid"
+      style={{
+        backgroundColor: "gold",
+        boxShadow: "0 0 20px black",
+        textAlign: "center",
+        paddingBottom: "10px",
+        paddingLeft: "3pt",
+      }}>
       {/* <div class="container-fluid" style={{backgroundColor:'lightseagreen', boxShadow: '0 0 20px black',textAlign:'center', paddingBottom: '10px', paddingLeft:'3pt' }}> */}
       <h2
         style={{
