@@ -1,8 +1,6 @@
 import React from "react";
 import Realistic from "./RealisticConfetti";
-let bodyfill = () => {
-    document.body.style.backgroundColor = 'darkgoldenrod'
-}
+
 
 const ParishPics = () => {
     return(
