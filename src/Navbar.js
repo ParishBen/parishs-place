@@ -28,6 +28,10 @@ const NavBar = () => {
                 <li><Link class="dropdown-item" to="/blogs/1">Blog 1</Link></li>
                 <li><Link class="dropdown-item" to="/blogs/2">Blog 2</Link></li>
                 <li><Link class="dropdown-item" to="/blogs/3">Blog 3</Link></li>
+                <li><Link class="dropdown-item" to="/blogs/4">Blog 4</Link></li>
+                <li><Link class="dropdown-item" to="/blogs/5">Blog 5</Link></li>
+                <li><Link class="dropdown-item" to="/blogs/6">Blog 6</Link></li>
+                <li><Link class="dropdown-item" to="/blogs/7">Blog 7</Link></li>
               </ul>
            </li>
          </ul>

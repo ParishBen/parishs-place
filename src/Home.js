@@ -7,9 +7,6 @@ const Home = () => {
             FROM HOME COMPONENT
         </p>
         {/*<img src={logo} className="App-logo" alt="logo" />*/}
-
-    
-
       </header>
     )
 }

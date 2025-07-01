@@ -6,22 +6,18 @@ import Blog4 from "./BlogsContainer/Blog4"
 import Blog5 from "./BlogsContainer/Blog5"
 import Blog6 from "./BlogsContainer/Blog6"
 
+
+const blogComponents = [Blog0, Blog1, Blog2, Blog3, Blog4, Blog5, Blog6];
+
 const Blogs = () => {
     return (
-        <>
-        <div class="container-fluid" style={{backgroundColor:'lightseagreen', boxShadow: '0 0 20px black',textAlign:'center', paddingBottom: '10px', paddingLeft:'3pt' }}>
+        <div className="container-fluid" style={{backgroundColor:'lightseagreen', boxShadow: '0 0 20px black',textAlign:'center', paddingBottom: '10px', paddingLeft:'3pt' }}>
             <ul style={{listStyle:'none'}}>
-        {/* <span style={{backgroundColor:'#ad9c3a', position:'relative',top:'12pt'}}> */}
-                <li><Blog0/></li>
-                <li><Blog1/></li>
-                <li><Blog2/></li>
-                <li><Blog3/></li>
-                <li><Blog4/></li>
-                <li><Blog5/></li>
-                <li><Blog6/></li>
-        {/* </span> */}
+                {blogComponents.map((BlogComponent, idx) => (
+                    <li key={idx}><BlogComponent /></li>
+                ))}
             </ul>
-        </div></>
+        </div>
     )
 }
 export default Blogs
